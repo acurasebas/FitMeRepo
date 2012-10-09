@@ -10,7 +10,7 @@ public class LoginActivity extends SherlockActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.loginactivity);  //comment here Edited prueba sebastian
+        setContentView(R.layout.loginactivity);  // this is a test for the new branch
     }
 
    /* @Override
