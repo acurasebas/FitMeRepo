@@ -8,6 +8,9 @@
 package com.fitmetracker.fitme;
 
 public final class R {
+    public static final class array {
+        public static final int menuPrueba=0x7f0b0000;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -922,6 +925,7 @@ containing a value of this type.
         public static final int ic_launcher2=0x7f020071;
     }
     public static final class id {
+        public static final int Texto=0x7f040033;
         public static final int abs__action_bar=0x7f040022;
         public static final int abs__action_bar_container=0x7f040021;
         public static final int abs__action_bar_subtitle=0x7f040011;
@@ -966,7 +970,7 @@ containing a value of this type.
         public static final int edit_query=0x7f040027;
         public static final int homeAsUp=0x7f040006;
         public static final int listMode=0x7f040002;
-        public static final int menu_settings=0x7f040033;
+        public static final int menu_settings=0x7f040034;
         public static final int normal=0x7f040001;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
@@ -1007,7 +1011,7 @@ containing a value of this type.
         public static final int sherlock_spinner_item=0x7f030019;
     }
     public static final class menu {
-        public static final int loginactivity=0x7f0b0000;
+        public static final int loginactivity=0x7f0c0000;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
