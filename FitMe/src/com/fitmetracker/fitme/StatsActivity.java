@@ -17,10 +17,10 @@ public class StatsActivity extends SherlockActivity implements ActionBar.OnNavig
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainscreen_activity);
         
-        itemsMenu = getResources().getStringArray(R.array.dropdownList);
+        itemsMenu = getResources().getStringArray(R.array.dropdownListStats);
         
         Context context = getSupportActionBar().getThemedContext();
-        ArrayAdapter<CharSequence> list = ArrayAdapter.createFromResource(context, R.array.dropdownList, R.layout.sherlock_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> list = ArrayAdapter.createFromResource(context, R.array.dropdownListStats, R.layout.sherlock_spinner_dropdown_item);
         
         getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
         getSupportActionBar().setListNavigationCallbacks(list,  this);
@@ -37,19 +37,19 @@ public class StatsActivity extends SherlockActivity implements ActionBar.OnNavig
 		// When tap on an item, it takes you to the Activity
 		if(itemPosition == 0){
 			
-			// Creates the new intent that will take you to the Home screen
-			Intent i = new Intent(getApplicationContext(), MainScreenActivity.class);
-			startActivity(i);
 			return true;
 		} else if(itemPosition == 1){
 			// Doesn't do anything as the user is already in the stats screen
-			
-			return false;
+			Intent i = new Intent(getApplicationContext(), MainScreenActivity.class);
+			startActivity(i);
+			finish();
+			return true;
 			
 		} else if(itemPosition == 2){
 			// Creates the new intent that will take you to the Option Screen
 			Intent i = new Intent(getApplicationContext(), OptionsActivity.class);
 			startActivity(i);
+			finish();
 			return true;
 		}
 		else
