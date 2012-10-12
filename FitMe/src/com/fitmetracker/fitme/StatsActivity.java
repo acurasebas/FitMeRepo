@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 
-public class MainScreenActivity extends SherlockActivity implements ActionBar.OnNavigationListener {
+public class StatsActivity extends SherlockActivity implements ActionBar.OnNavigationListener {
 
 	private String[] itemsMenu;
 	
@@ -24,7 +24,7 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
         
         getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
         getSupportActionBar().setListNavigationCallbacks(list,  this);
-        getSupportActionBar().setTitle("FitMe Home"); 
+        getSupportActionBar().setTitle("FitMe Stats"); 
     }
 
     /*@Override
@@ -33,16 +33,18 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
         return true;
     }*/
 
-	public boolean onNavigationItemSelected(int itemPosition, long itemId) {
+    public boolean onNavigationItemSelected(int itemPosition, long itemId) {
 		// When tap on an item, it takes you to the Activity
 		if(itemPosition == 0){
-			// Doesn't do anything as the user is already in the home screen
-			return false;
-		} else if(itemPosition == 1){
-			// Creates the new intent that will take you to the Stats screen
-			Intent i = new Intent(getApplicationContext(), StatsActivity.class);
+			
+			// Creates the new intent that will take you to the Home screen
+			Intent i = new Intent(getApplicationContext(), MainScreenActivity.class);
 			startActivity(i);
 			return true;
+		} else if(itemPosition == 1){
+			// Doesn't do anything as the user is already in the stats screen
+			
+			return false;
 			
 		} else if(itemPosition == 2){
 			// Creates the new intent that will take you to the Option Screen
@@ -54,3 +56,4 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
 			return false;
 	}
 }
+
