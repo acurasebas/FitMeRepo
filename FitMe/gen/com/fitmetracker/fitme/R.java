@@ -1013,14 +1013,16 @@ containing a value of this type.
         public static final int abs__simple_dropdown_hint=0x7f030016;
         public static final int login=0x7f030017;
         public static final int loginactivity=0x7f030018;
-        public static final int register_activity=0x7f030019;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001a;
-        public static final int sherlock_spinner_item=0x7f03001b;
+        public static final int mainscreen_activity=0x7f030019;
+        public static final int register_activity=0x7f03001a;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001b;
+        public static final int sherlock_spinner_item=0x7f03001c;
     }
     public static final class menu {
         public static final int login_activity=0x7f0c0000;
         public static final int loginactivity=0x7f0c0001;
-        public static final int register_activity=0x7f0c0002;
+        public static final int mainscreen_activity=0x7f0c0002;
+        public static final int register_activity=0x7f0c0003;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1077,6 +1079,7 @@ containing a value of this type.
         public static final int passwordText=0x7f090014;
         public static final int title_activity_log_in=0x7f090016;
         public static final int title_activity_login=0x7f090012;
+        public static final int title_activity_main_screen=0x7f09001a;
         public static final int title_activity_register=0x7f090017;
         public static final int usernameText=0x7f090018;
     }
