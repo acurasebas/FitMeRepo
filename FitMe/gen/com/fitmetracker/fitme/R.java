@@ -971,19 +971,20 @@ containing a value of this type.
         public static final int abs__up=0x7f04000b;
         public static final int btnLoginLogin=0x7f040035;
         public static final int btnRegisterLogin=0x7f040036;
-        public static final int btnRegisterRegister=0x7f040039;
+        public static final int btnRegisterRegister=0x7f04003a;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040027;
         public static final int headerLogin=0x7f040033;
-        public static final int headerRegister=0x7f040038;
+        public static final int headerRegister=0x7f040039;
         public static final int homeAsUp=0x7f040006;
         public static final int listMode=0x7f040002;
-        public static final int menu_settings=0x7f04003a;
+        public static final int menu_settings=0x7f04003b;
         public static final int normal=0x7f040001;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
         public static final int tabMode=0x7f040003;
+        public static final int tableRow1=0x7f040038;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
     }

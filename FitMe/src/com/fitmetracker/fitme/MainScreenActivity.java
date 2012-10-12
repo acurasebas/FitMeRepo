@@ -41,12 +41,14 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
 		} else if(itemPosition == 1){
 			// Creates the new intent that will take you to the Stats screen
 			Intent i = new Intent(getApplicationContext(), StatsActivity.class);
+			this.finish();
 			startActivity(i);
 			return true;
 			
 		} else if(itemPosition == 2){
 			// Creates the new intent that will take you to the Option Screen
 			Intent i = new Intent(getApplicationContext(), OptionsActivity.class);
+			this.finish();
 			startActivity(i);
 			return true;
 		}
