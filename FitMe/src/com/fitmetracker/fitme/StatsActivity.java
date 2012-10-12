@@ -24,7 +24,7 @@ public class StatsActivity extends SherlockActivity implements ActionBar.OnNavig
         
         getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
         getSupportActionBar().setListNavigationCallbacks(list,  this);
-        getSupportActionBar().setTitle("FitMe Stats"); 
+        getSupportActionBar().setTitle("FitMe Stats");  
     }
 
     /*@Override

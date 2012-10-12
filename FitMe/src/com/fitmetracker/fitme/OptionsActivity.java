@@ -41,7 +41,7 @@ public class OptionsActivity extends SherlockActivity implements ActionBar.OnNav
 			// Creates the new intent that will take you to the Home screen
 			Intent i = new Intent(getApplicationContext(), MainScreenActivity.class);
 			startActivity(i);
-			return true;
+			return true; 
 		} else if(itemPosition == 1){
 			// Creates the new intent that will take you to the Stats screen
 			Intent i = new Intent(getApplicationContext(), OptionsActivity.class);
