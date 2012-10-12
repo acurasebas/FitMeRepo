@@ -1,10 +1,75 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0c2512" >
+    android:background="#0c2512"
+    android:orientation="vertical" >
 
-  
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp" >
 
-</RelativeLayout>
- 
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/LinearLayout01"
+            android:ems="10"
+            android:text="@string/optionStrapText" >
+
+            <requestFocus />
+        </EditText>
+
+        <ToggleButton
+            android:id="@+id/ToggleButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/EditText01"
+            android:layout_marginRight="60dp"
+            android:text="ToggleButton" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_toRightOf="@+id/linearLayout1"
+            android:ems="10"
+            android:text="@string/optionRunningUnits" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/editText1"
+            android:text="ToggleButton" />
+
+    </RelativeLayout>
+
+</LinearLayout>

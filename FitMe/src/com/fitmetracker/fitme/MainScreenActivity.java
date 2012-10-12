@@ -1,21 +1,42 @@
 package com.fitmetracker.fitme;
 
+import java.util.Locale;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
+import android.speech.tts.TextToSpeech;
+import android.widget.Button;
+import android.app.Activity;
 
-public class MainScreenActivity extends SherlockActivity implements ActionBar.OnNavigationListener {
+
+public class MainScreenActivity extends SherlockActivity implements ActionBar.OnNavigationListener, TextToSpeech.OnInitListener {
 
 	private String[] itemsMenu;
+	private TextToSpeech tts;
+	private Button btnSpeak;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainscreen_activity);
+        
+        tts = new TextToSpeech(this, this);
+        btnSpeak = (Button) findViewById(R.id.btnSpeak); // ACORDARSE DE BORRAR EL BOTON!!
+        
+        btnSpeak.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				speakOut();
+				
+			}
+		});
         
         itemsMenu = getResources().getStringArray(R.array.dropdownListMain);
         
@@ -57,4 +78,35 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
 		else
 			return false;
 	}
+
+	public void onInit(int status) {
+		if(status == TextToSpeech.SUCCESS){
+			int result = tts.setLanguage(Locale.US);
+			if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
+				Log.e("TTS", "This language is not supported");
+			} else{
+				btnSpeak.setEnabled(true);
+				speakOut();
+			} }
+			else{
+				Log.e("TTS", "Initialization Failed!");
+			}
+		
+		
+	}
+	
+	@Override
+	public void onDestroy(){
+		if(tts != null){
+			tts.stop();
+			tts.shutdown();
+		}
+		super.onDestroy();
+	}
+	
+	private void speakOut(){
+		tts.speak("Attention!,  high beat rate!", TextToSpeech.QUEUE_FLUSH, null);
+	}
+	
+	
 }
