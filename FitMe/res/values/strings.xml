@@ -18,5 +18,10 @@
     <string name="usernameText">Username</string>
     <string name="createnewaccountText">Create New Account</string>
     <string name="title_activity_main_screen">MainScreenActivity</string>
+    <string-array name="dropdownList">
+        <item >Home</item>
+        <item >Stats</item>
+        <item >Options</item>
+    </string-array>
 
 </resources>

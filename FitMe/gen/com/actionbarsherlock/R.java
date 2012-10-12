@@ -9,6 +9,7 @@ package com.actionbarsherlock;
 
 public final class R {
     public static final class array {
+        public static final int dropdownList=0x7f0b0001;
         public static final int menuPrueba=0x7f0b0000;
     }
     public static final class attr {
