@@ -23,7 +23,7 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
         
         getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
         getSupportActionBar().setListNavigationCallbacks(list,  this);
-        getSupportActionBar().setTitle("Workout");
+        getSupportActionBar().setTitle("Workout"); // PROBAFiwehgjoqnhiorp
     }
 
     /*@Override
