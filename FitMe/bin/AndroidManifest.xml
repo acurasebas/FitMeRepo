@@ -43,13 +43,17 @@
         <activity
             android:name=".OptionsActivity"
             android:label="@string/title_activity_options" >
-            
         </activity>
         <activity
             android:name=".StatsActivity"
             android:label="@string/title_activity_stats" >
-            
         </activity>
     </application>
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>
