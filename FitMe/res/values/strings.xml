@@ -8,7 +8,7 @@
     <string-array name="menuPrueba">
         <item>Elemento 1</item>
         <item>Elemento 2</item>
-    </string-array> 
+    </string-array>
  
     <string name="emailText">email</string>
     <string name="passwordText">Password</string>
