@@ -11,7 +11,7 @@
     </string-array>
 
     <string name="emailText">email</string>
-    <string name="passwordText">password</string>
+    <string name="passwordText">Password</string>
     <string name="loginText">Login</string>
     <string name="title_activity_log_in">LogInActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
@@ -41,5 +41,7 @@
 
     <string name="optionStrapText">Strap</string>
     <string name="optionRunningUnits">Running Units</string>
+    <string name="UserDetails">User Details</string>
+    <string name="choose_avatar_text">Choose Avatar</string>
 
 </resources>
