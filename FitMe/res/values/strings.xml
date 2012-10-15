@@ -9,7 +9,7 @@
         <item>Elemento 1</item>
         <item>Elemento 2</item>
     </string-array>
-
+ 
     <string name="emailText">email</string>
     <string name="passwordText">Password</string>
     <string name="loginText">Login</string>
