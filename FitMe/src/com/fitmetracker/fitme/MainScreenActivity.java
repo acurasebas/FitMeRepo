@@ -20,16 +20,15 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
 
 	private String[] itemsMenu;
 	private TextToSpeech tts;
-	//private Button btnSpeak;
+	private Button btnSpeak;
 	
-    
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainscreen_activity);
         
         tts = new TextToSpeech(this, this);
-       /* btnSpeak = (Button) findViewById(R.id.btnSpeak); // ACORDARSE DE BORRAR EL BOTON!!
+        /*btnSpeak = (Button) findViewById(R.id.btnSpeak); // ACORDARSE DE BORRAR EL BOTON!!
         
         btnSpeak.setOnClickListener(new View.OnClickListener() {
 			
@@ -86,8 +85,8 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
 			if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
 				Log.e("TTS", "This language is not supported");
 			} else{
-				//btnSpeak.setEnabled(true);
-				//speakOut();
+				btnSpeak.setEnabled(true);
+				speakOut();
 			} }
 			else{
 				Log.e("TTS", "Initialization Failed!");
@@ -108,8 +107,6 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
 	private void speakOut(){
 		tts.speak("Attention!,  high beat rate!", TextToSpeech.QUEUE_FLUSH, null);
 	}
-	
-	
 	
 	
 }

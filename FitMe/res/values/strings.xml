@@ -8,10 +8,10 @@
     <string-array name="menuPrueba">
         <item>Elemento 1</item>
         <item>Elemento 2</item>
-    </string-array>
-
+    </string-array> 
+ 
     <string name="emailText">email</string>
-    <string name="passwordText">password</string>
+    <string name="passwordText">Password</string>
     <string name="loginText">Login</string>
     <string name="title_activity_log_in">LogInActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
@@ -41,6 +41,8 @@
 
     <string name="optionStrapText">Strap</string>
     <string name="optionRunningUnits">Running Units</string>
+    <string name="UserDetails">User Details</string>
+    <string name="choose_avatar_text">Choose Avatar</string>
     <string name="durationText">DURATION</string>
     <string name="chronoText">00:00:00</string>
     <string name="totaldistanceText">Total Distance</string>
