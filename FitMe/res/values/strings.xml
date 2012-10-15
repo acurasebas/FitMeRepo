@@ -43,5 +43,14 @@
     <string name="optionRunningUnits">Running Units</string>
     <string name="UserDetails">User Details</string>
     <string name="choose_avatar_text">Choose Avatar</string>
+    <string name="durationText">DURATION</string>
+    <string name="chronoText">00:00:00</string>
+    <string name="totaldistanceText">Total Distance</string>
+    <string name="speedText">Speed</string>
+    <string name="bpmText">0 bpm</string>
+    <string name="finishText">FINISH</string>
+    <color name="textColor">#F2F2F2</color>
+    <string name="totaldistancebeforestartingText">0.0 Mi</string>
+    <string name="speedbeforestartingText">0.0 mph</string>
 
 </resources>

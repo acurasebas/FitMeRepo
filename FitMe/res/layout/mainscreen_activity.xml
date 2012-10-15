@@ -2,14 +2,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res/com.fitmetracker.fitme"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#0c2512" >
+    android:layout_height="fill_parent"
+    android:background="#0c2512"
+    android:orientation="vertical" >
 
-    <Button
-                android:id="@+id/btnSpeak"
-                android:layout_width="fill_parent"
+    <TextView
+        android:id="@+id/txDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:paddingBottom="20dip"
+        android:paddingTop="15dip"
+        android:text="@string/durationText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/textColor" />
+
+    <Chronometer
+        android:id="@+id/chronometer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="20dip"
+        android:text="@string/chronoText"
+        android:textColor="@color/textColor"
+        android:textSize="50dip"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingRight="40dip" >
+
+            <TextView
+                android:id="@+id/txTotalDistance"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Speak" />
+                android:layout_gravity="center"
+                android:paddingLeft="10dip"
+                android:text="@string/totaldistanceText"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/txTotalDistanceNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:text="@string/totaldistancebeforestartingText"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textColor"
+                android:textSize="30dip" />
+
+            <TextView
+                android:id="@+id/txSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dip"
+                android:paddingTop="15dip"
+                android:text="@string/speedText"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/txSpeedNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:text="@string/speedbeforestartingText"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textColor"
+                android:textSize="30dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingLeft="40dip" >
+
+            <ImageView
+                android:id="@+id/logoHeart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:baselineAlignBottom="true"
+                android:paddingRight="10dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/txBPM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="@string/bpmText"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textColor"
+                android:textSize="30dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0c2512"
+            android:src="@drawable/playbutton" />
+
+        <Button
+            android:id="@+id/btFinish"
+            android:layout_width="128dp"
+            android:layout_marginLeft="20dip"
+            android:layout_height="40dip"
+            android:layout_gravity="right|center"
+            android:background="#B40404"
+            android:text="@string/finishText"
+            android:textColor="@color/textColor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 </LinearLayout>
-

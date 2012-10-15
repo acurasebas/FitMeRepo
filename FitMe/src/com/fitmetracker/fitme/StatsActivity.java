@@ -15,7 +15,7 @@ public class StatsActivity extends SherlockActivity implements ActionBar.OnNavig
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mainscreen_activity);
+        setContentView(R.layout.stats_activity);
         
         itemsMenu = getResources().getStringArray(R.array.dropdownListStats);
         

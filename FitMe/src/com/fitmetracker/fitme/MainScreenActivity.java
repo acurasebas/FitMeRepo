@@ -28,7 +28,7 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
         setContentView(R.layout.mainscreen_activity);
         
         tts = new TextToSpeech(this, this);
-        btnSpeak = (Button) findViewById(R.id.btnSpeak); // ACORDARSE DE BORRAR EL BOTON!!
+        /*btnSpeak = (Button) findViewById(R.id.btnSpeak); // ACORDARSE DE BORRAR EL BOTON!!
         
         btnSpeak.setOnClickListener(new View.OnClickListener() {
 			
@@ -36,7 +36,7 @@ public class MainScreenActivity extends SherlockActivity implements ActionBar.On
 				speakOut();
 				
 			}
-		});
+		});*/
         
         itemsMenu = getResources().getStringArray(R.array.dropdownListMain);
         
