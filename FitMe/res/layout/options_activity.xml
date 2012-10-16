@@ -1,165 +1,176 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/AppTheme"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     android:background="#0c2512"
-    android:clickable="true"
-    android:minHeight="300dp"
-    android:minWidth="300dp"
-    android:orientation="vertical" >
+    android:fillViewport="true" >
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="92dp" >
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
-        <LinearLayout
-            android:id="@+id/LinearLayout01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" >
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/EditText01"
-            android:layout_width="78dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="60dp"
-            android:layout_toRightOf="@+id/LinearLayout01"
-            android:ems="10"
-            android:textSize="28dip"
-            android:textColor="#ffffff"
-            android:text="@string/optionStrapText" >
-        </TextView>
-
-        <ToggleButton
-            android:id="@+id/ToggleButton01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/EditText01"
-            android:layout_marginRight="50dp" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp" >
-
-        <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" >
-        </LinearLayout>
-
-        <TextView
-            
-            android:id="@+id/editText1"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="44dp"
-            android:layout_toRightOf="@+id/linearLayout1"
-            android:ems="10"
-            android:textSize="24dip"
-            android:textColor="#ffffff"
-            android:text="@string/optionRunningUnits" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/editText1"
-            android:layout_marginRight="50dp"
-             />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <TextView
-            android:id="@+id/TextView01"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:ems="10"
-            android:text="@string/UserDetails"
-            android:textColor="#ffffff"
-            android:textSize="28dip" />
-
-        <ImageView 
-            android:id="@+id/imageView1"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/TextView01"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/avatarpic2"  />
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_alignLeft="@+id/imageView1"
-            android:layout_below="@+id/imageView1"
-            android:text="@string/choose_avatar_text"
-            android:textSize="10dp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignTop="@+id/imageView1"
-            android:layout_toLeftOf="@+id/imageView1"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/textView1"
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/usernameText"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#ffffff" />
-
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="152dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:inputType="textPersonName"
-                android:text="@string/usernameText" />
+                android:layout_alignParentBottom="true" >
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/TextView02"
+                android:id="@+id/EditText01"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/LinearLayout01"
+                android:ems="10"
+                android:text="@string/optionStrapText"
+                android:textColor="#ffffff"
+                android:textSize="24dip" />
+
+            <ToggleButton
+                android:id="@+id/ToggleButton01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="25dp"
-                android:text="@string/passwordText"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="#ffffff" />
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/EditText01"
+                android:layout_marginRight="50dp" />
+        </RelativeLayout>
 
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="152dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:inputType="textPassword"
-                android:text="@string/passwordText" />
+                android:layout_alignParentBottom="true" >
+            </LinearLayout>
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/editText1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="44dp"
+                android:layout_toRightOf="@+id/linearLayout1"
+                android:ems="10"
+                android:text="@string/optionRunningUnits"
+                android:textColor="#ffffff"
+                android:textSize="24dip" />
 
-    </RelativeLayout>
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/editText1"
+                android:layout_marginRight="50dp" />
+        </RelativeLayout>
 
-</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:text="@string/UserDetails"
+                android:textColor="#ffffff"
+                android:textSize="28dip" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/TextView01"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/coolandroid" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_below="@+id/imageView1"
+                android:text="@string/choose_avatar_text"
+                android:textSize="10dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button1"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/TextView01"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/usernameText"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="152dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:hint="@string/usernameText"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textColor" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/passwordText"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="152dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:hint="······"
+                    android:inputType="textPassword"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/button1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/saveChangesText" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

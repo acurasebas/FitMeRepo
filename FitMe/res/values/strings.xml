@@ -52,5 +52,6 @@
     <color name="textColor">#F2F2F2</color>
     <string name="totaldistancebeforestartingText">0.0 Mi</string>
     <string name="speedbeforestartingText">0.0 mph</string>
+    <string name="saveChangesText">Save Changes</string>
 
 </resources>

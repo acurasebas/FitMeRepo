@@ -17,7 +17,7 @@ public class OptionsActivity extends SherlockActivity implements
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.mainscreen_activity);
+		setContentView(R.layout.options_activity);
 
 		itemsMenu = getResources().getStringArray(R.array.dropdownListOptions);
 
